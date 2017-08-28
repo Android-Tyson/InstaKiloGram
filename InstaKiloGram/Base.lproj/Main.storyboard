@@ -92,7 +92,7 @@
                                         <rect key="frame" x="0.0" y="38" width="272" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-Tt-zNR" customClass="FancyButton" customModule="InstaKiloGram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="272" height="28"/>
@@ -104,6 +104,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="0.96688610406091369" green="0.96688610406091369" blue="0.96688610406091369" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWy-bV-xNt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -127,10 +130,52 @@
                             <constraint firstItem="xpN-Hk-wTz" firstAttribute="top" secondItem="VwZ-VP-nWF" secondAttribute="bottom" constant="16" id="jry-gS-L4m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="EQ8-Bo-gGq" id="6Zh-d7-UOD"/>
+                        <outlet property="passwordField" destination="SJc-fn-DzN" id="nRb-Tz-xIS"/>
+                        <segue destination="Avc-eH-mRI" kind="show" identifier="gotoFeed" id="3bx-cX-MFI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="kQk-YX-5F0">
+            <objects>
+                <viewController id="Avc-eH-mRI" customClass="FeedVC" customModule="InstaKiloGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G0H-Sp-GTU"/>
+                        <viewControllerLayoutGuide type="bottom" id="UYZ-ol-q8P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIt-ik-ido">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx9-0w-WUl">
+                                <rect key="frame" x="121" y="266" width="78" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.96688610409999998" green="0.96688610409999998" blue="0.96688610409999998" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="Avc-eH-mRI" eventType="touchUpInside" id="zmj-p1-H5H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59215686270000001" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rx9-0w-WUl" firstAttribute="centerY" secondItem="hIt-ik-ido" secondAttribute="centerY" id="B0j-5o-VND"/>
+                            <constraint firstItem="Rx9-0w-WUl" firstAttribute="centerX" secondItem="hIt-ik-ido" secondAttribute="centerX" id="Z5N-Zn-DhQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignIn" id="ep5-ea-6Gd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWq-zK-v2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="138"/>
         </scene>
     </scenes>
     <resources>
