@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327F0FBFB5D63645AF8CFBFC /* Pods_InstaKiloGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A7C24223CCF9CED530083 /* Pods_InstaKiloGram.framework */; };
 		8FD0D7A91F53507E0064D18D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0D7A81F53507E0064D18D /* AppDelegate.swift */; };
-		8FD0D7AB1F53507E0064D18D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AA1F53507E0064D18D /* ViewController.swift */; };
+		8FD0D7AB1F53507E0064D18D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AA1F53507E0064D18D /* SignInVC.swift */; };
 		8FD0D7AE1F53507E0064D18D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AC1F53507E0064D18D /* Main.storyboard */; };
 		8FD0D7B01F53507E0064D18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AF1F53507E0064D18D /* Assets.xcassets */; };
 		8FD0D7B31F53507E0064D18D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D7B11F53507E0064D18D /* LaunchScreen.storyboard */; };
+		8FD0D7BB1F5351A10064D18D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D7BA1F5351A10064D18D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F8E351A5D11578D53E151AC /* Pods-InstaKiloGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram.debug.xcconfig"; sourceTree = "<group>"; };
 		8FD0D7A51F53507E0064D18D /* InstaKiloGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKiloGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD0D7A81F53507E0064D18D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FD0D7AA1F53507E0064D18D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FD0D7AA1F53507E0064D18D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		8FD0D7AD1F53507E0064D18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FD0D7AF1F53507E0064D18D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FD0D7B21F53507E0064D18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FD0D7B41F53507E0064D18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD0D7BA1F5351A10064D18D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B3B9C85C649134128673085 /* Pods-InstaKiloGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram.release.xcconfig"; sourceTree = "<group>"; };
+		F20A7C24223CCF9CED530083 /* Pods_InstaKiloGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaKiloGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327F0FBFB5D63645AF8CFBFC /* Pods_InstaKiloGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		682786A71E469F1B7D6A1BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20A7C24223CCF9CED530083 /* Pods_InstaKiloGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F67FF0A1F540B6B007CA03A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8F67FF0B1F540B72007CA03A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8F67FF0C1F540B77007CA03A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0D7AA1F53507E0064D18D /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		8FD0D79C1F53507E0064D18D = {
 			isa = PBXGroup;
 			children = (
 				8FD0D7A71F53507E0064D18D /* InstaKiloGram */,
 				8FD0D7A61F53507E0064D18D /* Products */,
+				DEFF843455B56D1C8DDC09F7 /* Pods */,
+				682786A71E469F1B7D6A1BCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,26 @@
 		8FD0D7A71F53507E0064D18D /* InstaKiloGram */ = {
 			isa = PBXGroup;
 			children = (
+				8F67FF0C1F540B77007CA03A /* Controller */,
+				8F67FF0B1F540B72007CA03A /* View */,
+				8F67FF0A1F540B6B007CA03A /* Model */,
 				8FD0D7A81F53507E0064D18D /* AppDelegate.swift */,
-				8FD0D7AA1F53507E0064D18D /* ViewController.swift */,
 				8FD0D7AC1F53507E0064D18D /* Main.storyboard */,
 				8FD0D7AF1F53507E0064D18D /* Assets.xcassets */,
 				8FD0D7B11F53507E0064D18D /* LaunchScreen.storyboard */,
 				8FD0D7B41F53507E0064D18D /* Info.plist */,
+				8FD0D7BA1F5351A10064D18D /* GoogleService-Info.plist */,
 			);
 			path = InstaKiloGram;
+			sourceTree = "<group>";
+		};
+		DEFF843455B56D1C8DDC09F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F8E351A5D11578D53E151AC /* Pods-InstaKiloGram.debug.xcconfig */,
+				9B3B9C85C649134128673085 /* Pods-InstaKiloGram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FD0D7B71F53507E0064D18D /* Build configuration list for PBXNativeTarget "InstaKiloGram" */;
 			buildPhases = (
+				DC5575F1E8FCFFA486A0030F /* [CP] Check Pods Manifest.lock */,
 				8FD0D7A11F53507E0064D18D /* Sources */,
 				8FD0D7A21F53507E0064D18D /* Frameworks */,
 				8FD0D7A31F53507E0064D18D /* Resources */,
+				AA2489074DF9C3C7DFFFD473 /* [CP] Embed Pods Frameworks */,
+				76692B689AD41AF5FF1F2424 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,17 +180,78 @@
 				8FD0D7B31F53507E0064D18D /* LaunchScreen.storyboard in Resources */,
 				8FD0D7B01F53507E0064D18D /* Assets.xcassets in Resources */,
 				8FD0D7AE1F53507E0064D18D /* Main.storyboard in Resources */,
+				8FD0D7BB1F5351A10064D18D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76692B689AD41AF5FF1F2424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2489074DF9C3C7DFFFD473 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC5575F1E8FCFFA486A0030F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaKiloGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FD0D7A11F53507E0064D18D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD0D7AB1F53507E0064D18D /* ViewController.swift in Sources */,
+				8FD0D7AB1F53507E0064D18D /* SignInVC.swift in Sources */,
 				8FD0D7A91F53507E0064D18D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +373,7 @@
 		};
 		8FD0D7B81F53507E0064D18D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8E351A5D11578D53E151AC /* Pods-InstaKiloGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaKiloGram/Info.plist;
@@ -270,6 +386,7 @@
 		};
 		8FD0D7B91F53507E0064D18D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3B9C85C649134128673085 /* Pods-InstaKiloGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaKiloGram/Info.plist;
@@ -299,6 +416,7 @@
 				8FD0D7B91F53507E0064D18D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
