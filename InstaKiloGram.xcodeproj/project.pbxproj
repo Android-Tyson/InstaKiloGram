@@ -28,6 +28,7 @@
 		8F67FF121F5424D0007CA03A /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F67FF141F542806007CA03A /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		8F67FF161F54290C007CA03A /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		8F67FF181F546483007CA03A /* InstaKiloGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstaKiloGram.entitlements; sourceTree = "<group>"; };
 		8FD0D7A51F53507E0064D18D /* InstaKiloGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKiloGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD0D7A81F53507E0064D18D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FD0D7AA1F53507E0064D18D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		8FD0D7A71F53507E0064D18D /* InstaKiloGram */ = {
 			isa = PBXGroup;
 			children = (
+				8F67FF181F546483007CA03A /* InstaKiloGram.entitlements */,
 				8F67FF0F1F542187007CA03A /* Utils */,
 				8F67FF0C1F540B77007CA03A /* Controller */,
 				8F67FF0B1F540B72007CA03A /* View */,
@@ -173,7 +175,13 @@
 				TargetAttributes = {
 					8FD0D7A41F53507E0064D18D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RGDJ2NA43B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -232,6 +240,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -239,6 +250,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -404,6 +418,7 @@
 			baseConfigurationReference = 5F8E351A5D11578D53E151AC /* Pods-InstaKiloGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGDJ2NA43B;
 				INFOPLIST_FILE = InstaKiloGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.historymakers.InstaKiloGram;
@@ -417,6 +432,7 @@
 			baseConfigurationReference = 9B3B9C85C649134128673085 /* Pods-InstaKiloGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGDJ2NA43B;
 				INFOPLIST_FILE = InstaKiloGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.historymakers.InstaKiloGram;

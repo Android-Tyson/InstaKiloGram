@@ -75,9 +75,12 @@
                                     <constraint firstAttribute="width" constant="150" id="icr-nk-Dxj"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQv-hV-NWA"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qak-d4-fVf">
-                                <rect key="frame" x="24" y="360" width="272" height="104"/>
+                                <rect key="frame" x="24" y="368" width="272" height="104"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQ8-Bo-gGq" customClass="FancyField" customModule="InstaKiloGram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
@@ -118,7 +121,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Qak-d4-fVf" secondAttribute="trailing" constant="8" id="SdZ-tm-z7G"/>
                             <constraint firstItem="Qak-d4-fVf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wss-zr-p83"/>
                             <constraint firstItem="7ft-lT-jWf" firstAttribute="top" secondItem="xpN-Hk-wTz" secondAttribute="bottom" constant="16" id="Yb6-88-7zx"/>
-                            <constraint firstItem="Qak-d4-fVf" firstAttribute="top" secondItem="7ft-lT-jWf" secondAttribute="bottom" constant="8" id="YeG-qG-2AZ"/>
+                            <constraint firstItem="Qak-d4-fVf" firstAttribute="top" secondItem="7ft-lT-jWf" secondAttribute="bottom" constant="16" id="YeG-qG-2AZ"/>
                             <constraint firstItem="VwZ-VP-nWF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fg7-un-O0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xpN-Hk-wTz" secondAttribute="trailing" id="gix-nb-1BT"/>
                             <constraint firstItem="xpN-Hk-wTz" firstAttribute="top" secondItem="VwZ-VP-nWF" secondAttribute="bottom" constant="16" id="jry-gS-L4m"/>
