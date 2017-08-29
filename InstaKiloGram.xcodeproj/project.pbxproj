@@ -14,6 +14,7 @@
 		8F67FF151F542806007CA03A /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF141F542806007CA03A /* FancyField.swift */; };
 		8F67FF171F54290C007CA03A /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF161F54290C007CA03A /* FancyButton.swift */; };
 		8F67FF1A1F54891F007CA03A /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF191F54891F007CA03A /* FeedVC.swift */; };
+		8F67FF1C1F54A892007CA03A /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF1B1F54A892007CA03A /* CircleView.swift */; };
 		8FD0D7A91F53507E0064D18D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0D7A81F53507E0064D18D /* AppDelegate.swift */; };
 		8FD0D7AB1F53507E0064D18D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AA1F53507E0064D18D /* SignInVC.swift */; };
 		8FD0D7AE1F53507E0064D18D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D7AC1F53507E0064D18D /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		8F67FF161F54290C007CA03A /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		8F67FF181F546483007CA03A /* InstaKiloGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstaKiloGram.entitlements; sourceTree = "<group>"; };
 		8F67FF191F54891F007CA03A /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		8F67FF1B1F54A892007CA03A /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		8FD0D7A51F53507E0064D18D /* InstaKiloGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKiloGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD0D7A81F53507E0064D18D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FD0D7AA1F53507E0064D18D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				8F67FF121F5424D0007CA03A /* RoundButton.swift */,
 				8F67FF141F542806007CA03A /* FancyField.swift */,
 				8F67FF161F54290C007CA03A /* FancyButton.swift */,
+				8F67FF1B1F54A892007CA03A /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F67FF1C1F54A892007CA03A /* CircleView.swift in Sources */,
 				8F67FF151F542806007CA03A /* FancyField.swift in Sources */,
 				8FD0D7AB1F53507E0064D18D /* SignInVC.swift in Sources */,
 				8F67FF131F5424D0007CA03A /* RoundButton.swift in Sources */,
