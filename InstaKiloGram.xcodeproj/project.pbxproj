@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		327F0FBFB5D63645AF8CFBFC /* Pods_InstaKiloGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A7C24223CCF9CED530083 /* Pods_InstaKiloGram.framework */; };
+		8F0E648D1F56C974005BCA2B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E648C1F56C974005BCA2B /* Post.swift */; };
 		8F67FF0E1F5420CE007CA03A /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF0D1F5420CE007CA03A /* FancyView.swift */; };
 		8F67FF111F5421A3007CA03A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF101F5421A3007CA03A /* Constants.swift */; };
 		8F67FF131F5424D0007CA03A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67FF121F5424D0007CA03A /* RoundButton.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		5F8E351A5D11578D53E151AC /* Pods-InstaKiloGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaKiloGram/Pods-InstaKiloGram.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0E648C1F56C974005BCA2B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8F67FF0D1F5420CE007CA03A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		8F67FF101F5421A3007CA03A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F67FF121F5424D0007CA03A /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		8F67FF0A1F540B6B007CA03A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F0E648C1F56C974005BCA2B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				8F67FF1C1F54A892007CA03A /* CircleView.swift in Sources */,
 				8F67FF151F542806007CA03A /* FancyField.swift in Sources */,
 				8FD0D7AB1F53507E0064D18D /* SignInVC.swift in Sources */,
+				8F0E648D1F56C974005BCA2B /* Post.swift in Sources */,
 				8F67FF131F5424D0007CA03A /* RoundButton.swift in Sources */,
 				8F67FF171F54290C007CA03A /* FancyButton.swift in Sources */,
 				8FA758121F558D03007BCD2A /* DataService.swift in Sources */,
